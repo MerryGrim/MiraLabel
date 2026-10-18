@@ -1,0 +1,19 @@
+name: Validate compatibility registry
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Validate reviewed records and forms
+        run: node scripts/validate-registry.cjs
+      - name: Check aggregation and evidence boundaries
+        run: node --test tests/registry.test.cjs

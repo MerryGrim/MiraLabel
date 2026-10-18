@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "testSpec": "miralabel-print-check-v1",
+  "expectedQr": "MIRA-D11H-TEST",
+  "updatedAt": "2026-10-18",
+  "maintainers": ["MerryGrim"],
+  "profiles": [
+    {
+      "id": "d11h-ble",
+      "model": "NIIMBOT D11H",
+      "modelId": 528,
+      "protocolVersion": 5,
+      "transport": "BLE",
+      "media": { "widthMm": 12, "lengthMm": 40, "type": "gap", "density": 2 },
+      "historicalBaseline": {
+        "kind": "author-local",
+        "appVersion": "0.1.1",
+        "firmware": "4.28",
+        "testedAt": null,
+        "publicEvidenceUrl": null
+      }
+    }
+  ],
+  "reports": []
+}

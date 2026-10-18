@@ -5,13 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   <meta name="description" content="Создавайте этикетки с текстом, QR, штрихкодами, иконками и рамками. Мира Этикетки для Windows 11, профиль NIIMBOT D11H BLE.">
-  <meta property="og:title" content="Мира Этикетки — редактор этикеток для Windows">
+  <meta property="og:title" content="Мира Этикетки — NIIMBOT D11H для Windows">
   <meta property="og:description" content="Каждой вещи — своя этикетка. Создавайте макеты для дома и мастерской.">
   <meta property="og:type" content="website">
-  <title>Мира Этикетки — редактор этикеток для Windows</title>
+  <title>Мира Этикетки — NIIMBOT D11H для Windows</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <script src="assets/preferences.js"></script>
   <link rel="stylesheet" href="assets/site.css">
+  <link rel="stylesheet" href="assets/compatibility.css">
+  <script src="assets/registry.js" defer></script>
+  <script src="assets/community.js" defer></script>
   <script src="assets/site.js" defer></script>
 </head>
 <body>
@@ -33,7 +36,7 @@
   <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
   <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
 </svg></span><span data-i18n="brand">Мира Этикетки</span></a>
-          <nav class="ml-links" aria-label="Навигация"><a class="cursor-interaction" href="#features" data-scroll="features" data-i18n="navFeatures">Возможности</a><a class="cursor-interaction" href="#editor" data-scroll="editor" data-i18n="navEditor">Редактор</a><a class="cursor-interaction" href="#download" data-scroll="download" data-i18n="navDownload">Скачать</a></nav>
+          <nav class="ml-links" aria-label="Навигация"><a href="#features" data-scroll="features" data-i18n="navFeatures">Возможности</a><a href="#editor" data-scroll="editor" data-i18n="navEditor">Редактор</a><a href="#compatibility" data-scroll="compatibility" data-i18n="navCompatibility">Совместимость</a><a href="#download" data-scroll="download" data-i18n="navDownload">Скачать</a></nav>
           <div class="ml-nav-controls"><label class="ml-language"><svg aria-hidden="true" focusable="false"
   xmlns="http://www.w3.org/2000/svg"
   width="24"
@@ -67,9 +70,11 @@
         </header>
         <main id="main">
           <div id="top" class="ml-hero-a ml-scroll-target">
-            <div class="ml-kicker"><span class="ml-dot"></span><span data-i18n="kicker">Для принтеров NIIMBOT</span></div>
-            <h1 class="ml-title"><span data-i18n="heroA1">Каждой вещи —</span><br><span class="ml-accent" data-i18n="heroA2">своя этикетка.</span></h1>
+            <div class="ml-kicker"><span class="ml-dot"></span><span data-i18n="kicker">Мира Этикетки · локальный редактор</span></div>
+            <h1 class="ml-title"><span data-i18n="heroA1">Этикетки для</span><br><span class="ml-accent" data-i18n="heroA2">NIIMBOT D11H.</span></h1>
+            <p class="ml-product-line"><span>Bluetooth BLE</span><span>Windows 11 x64</span></p>
             <p class="ml-lede" data-i18n="introA">Создавайте этикетки для NIIMBOT D11H с подключением по Bluetooth BLE. Текст, коды и любимые иконки — для дома, мастерской и всего, что хочется разложить по местам.</p>
+            <p class="ml-hero-scope" data-i18n="heroScope">Профиль печати — только D11H. Другие модели NIIMBOT и другие марки не подтверждены.</p>
             <div class="ml-actions"><a class="ml-button" data-download="selected" aria-disabled="true"><svg aria-hidden="true" focusable="false"
   xmlns="http://www.w3.org/2000/svg"
   width="24"
@@ -98,7 +103,7 @@
   <path d="m7 7 10 10" />
   <path d="M17 7v10H7" />
 </svg></button></div>
-            <div class="ml-version" data-version-line>Версия 0.2.6 · Windows 11 x64 · Бесплатно</div>
+            <div class="ml-version" data-version-line>Windows 11 x64 · Бесплатно</div>
           </div>
           <section id="editor" class="ml-editor-a ml-scroll-target" aria-label="Редактор этикеток" data-i18n-aria="editorSection">
             <div class="ml-label-corner"><svg aria-hidden="true" focusable="false"
@@ -117,7 +122,7 @@
   <path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7" />
   <path d="m7.5 4.27 9 5.15" />
 </svg><span data-i18n="sampleTools">Для хороших идей</span></div>
-            <div class="ml-editor-frame"><img data-editor-screen alt="Интерфейс Мира Этикетки 0.2.6" src="assets/editor-ru-light.webp" width="1600" height="1000" decoding="async" fetchpriority="high"></div>
+            <div class="ml-editor-frame"><img data-editor-screen alt="Редактор Мира Этикетки" src="assets/editor-ru-light.webp" width="1600" height="1000" decoding="async" fetchpriority="high"></div>
             <div class="ml-screen-caption"><span><svg aria-hidden="true" focusable="false"
   xmlns="http://www.w3.org/2000/svg"
   width="24"
@@ -193,6 +198,13 @@
   <path d="M13.9 17.45c-1.2-1.2-1.14-2.8-.2-3.73a2.43 2.43 0 0 1 3.44 0l.36.34.34-.34a2.43 2.43 0 0 1 3.45-.01c.95.95 1 2.53-.2 3.74L17.5 21Z" />
 </svg><h2 data-i18n="feature3Title">Сохраните хорошую идею</h2><p data-i18n="feature3Body">Начните с шаблона, сохраните свой макет или экспортируйте его в PNG.</p></article>
           </section>
+          <section id="compatibility" class="ml-community ml-scroll-target" aria-labelledby="compatibility-title">
+            <div class="ml-community-heading"><div><h2 id="compatibility-title" data-i18n="communityTitle">Как печатает ваш NIIMBOT?</h2><p data-i18n="communityIntro">Здесь собираются рассмотренные отчёты пользователей. Успех относится к указанным версии приложения, прошивке, подключению и бумаге — его нельзя переносить на все принтеры.</p></div><a class="ml-button ml-report-button" data-report-link href="https://github.com/MerryGrim/MiraLabel/issues/new?template=report-ru.yml" target="_blank" rel="noopener noreferrer" data-i18n="reportButton">Сообщить о проверке</a></div>
+            <div class="ml-registry-summary" data-registry-summary></div>
+            <div class="ml-registry-list" data-registry-list aria-live="polite"><article class="ml-scope-card"><div class="ml-scope-heading"><h3>NIIMBOT D11H · Bluetooth BLE</h3><span class="ml-badge">Не подтверждено</span></div><p class="ml-registry-empty">Публичных проверенных отчётов для текущей версии пока нет.</p></article></div>
+            <p class="ml-local-baseline" data-i18n="baseline">Автор локально проверял 0.1.1 на D11H с прошивкой 4.28. Публичного отчёта нет. Это не подтверждает текущую сборку и не входит в статистику.</p>
+            <div class="ml-community-notes"><div><h3 data-i18n="otherModelsTitle">Другие модели NIIMBOT</h3><p data-i18n="otherModelsBody">Не подтверждены. Наличие модели в каталоге приложения не означает, что печать поддерживается.</p><p class="ml-community-privacy" data-i18n="reviewNote">Новые Issues не меняют статус автоматически. Автор проверяет данные перед добавлением в реестр.</p><p class="ml-community-privacy" data-i18n="countExplanation">Результаты считают уникальных участников в точной конфигурации. Ошибки и частичные результаты сохраняются.</p></div><div><h3 data-i18n="howReportTitle">Проверили? Расскажите о результате.</h3><ol><li data-i18n="reportStep1">В приложении откройте проверку печати и подтвердите одну тестовую этикетку.</li><li data-i18n="reportStep2">Отметьте результат. Можно выбрать «не проверено».</li><li data-i18n="reportStep3">Нажмите «Открыть форму GitHub»: данные появятся автоматически. Проверьте и отправьте отчёт. Фото необязательно.</li></ol><p class="ml-community-privacy" data-i18n="reportPrivacy">Отчёт станет публичным после отправки. Не добавляйте серийный номер, Bluetooth-адрес и личные данные.</p></div></div>
+          </section>
           <section id="download" class="ml-download ml-scroll-target" aria-label="Скачать приложение" data-i18n-aria="downloadSection">
             <div><h2 data-i18n="downloadTitle">Порядок ждёт.</h2><p data-i18n="downloadBody">Выберите привычную установку или версию, которую достаточно распаковать и запустить.</p></div>
             <div class="ml-download-controls"><div class="ml-file-choices" role="group" aria-label="Формат приложения"><button class="ml-file" type="button" data-format="setup" aria-pressed="true"><b data-i18n="setup">Установщик</b><small>.exe · 99 МБ</small><svg aria-hidden="true" focusable="false"
@@ -233,7 +245,7 @@
   stroke-linejoin="round"
 >
   <path d="M20 6 9 17l-5-5" />
-</svg><span data-selected-format>Выбран установщик .exe · 0.2.6</span></div><a class="ml-button ml-download-button" data-download="selected" aria-disabled="true"><svg aria-hidden="true" focusable="false"
+</svg><span data-selected-format>Выбран установщик .exe</span></div><a class="ml-button ml-download-button" data-download="selected" aria-disabled="true"><svg aria-hidden="true" focusable="false"
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"

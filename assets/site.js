@@ -6,6 +6,8 @@
   let copy;
   let icons;
   let release;
+  let registry;
+  let registryError;
   let failed = false;
 
   const theme = () => state.theme === 'auto' ? (systemTheme.matches ? 'dark' : 'light') : state.theme;
@@ -65,6 +67,7 @@
     root.querySelector('[data-download-label]').textContent = text(state.format === 'zip' ? 'downloadZip' : 'downloadSetup');
     if (validURL(release.author?.url)) root.querySelector('[data-author-link]').href = release.author.url;
     setDownloadLinks();
+    if (window.MiraCommunity) MiraCommunity.render({root,registry,release,language:state.language,copy,error:registryError});
     const status = root.querySelector('.ml-status');
     if (status) status.textContent = failed ? text('unavailable') : '';
   }
@@ -109,15 +112,20 @@
       render();
     } catch {}
   });
-  Promise.all(['assets/copy.json', 'assets/icons.json', 'release.json'].map(async path => {
-    const response = await fetch(path);
+  const registryPromise = fetch('data/compatibility.json', {cache:'no-cache'}).then(response => {
+    if (!response.ok) throw new Error('Registry unavailable');
+    return response.json();
+  }).then(value => { registry=value; }).catch(() => {registryError=true;});
+  Promise.all(['assets/copy.json', 'assets/icons.json', 'release.json', 'assets/community-copy.json'].map(async path => {
+    const response = await fetch(path, {cache:'no-cache'});
     if (!response.ok) throw new Error(`Could not load ${path}`);
     return response.json();
-  })).then(([translations, iconSet, releaseInfo]) => {
-    copy = translations;
+  })).then(async ([translations, iconSet, releaseInfo, communityTranslations]) => {
+    copy = Object.fromEntries(Object.keys(translations).map(language => [language,{...translations[language],...communityTranslations[language]}]));
     icons = iconSet;
     release = releaseInfo;
     if (!release.version || !release.downloads?.setup || !release.downloads?.zip) throw new Error('Incomplete release information');
+    await registryPromise;
     render();
     document.documentElement.dataset.ready = 'true';
   }).catch(error => {

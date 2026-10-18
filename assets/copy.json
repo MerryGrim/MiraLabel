@@ -18,7 +18,7 @@
     "sampleTools": "Для хороших идей",
     "screenCaption": "Настройте макет. Рассмотрите каждую деталь.",
     "lightDark": "Светлая и тёмная темы",
-    "screenAlt": "Настоящий интерфейс Мира Этикетки 0.2.6",
+    "screenAlt": "Настоящий интерфейс Мира Этикетки {version}",
     "feature1Title": "Текст, коды и иконки",
     "feature1Body": "QR, штрихкоды Code 128, иконки и рамки — всё для вашей этикетки.",
     "feature2Title": "Каждая деталь на месте",
@@ -40,7 +40,7 @@
     "downloadSetup": "Скачать установщик",
     "downloadZip": "Скачать без установки",
     "unavailable": "Ссылки на скачивание временно недоступны. Попробуйте обновить страницу.",
-    "pageTitle": "Мира Этикетки — редактор этикеток для Windows",
+    "pageTitle": "Мира Этикетки — NIIMBOT D11H для Windows",
     "pageDescription": "Создавайте этикетки с текстом, QR, штрихкодами, иконками и рамками. Мира Этикетки для Windows 11, профиль NIIMBOT D11H BLE.",
     "versionLine": "Версия {version} · Windows 11 x64 · Бесплатно"
   },
@@ -63,7 +63,7 @@
     "sampleTools": "For good ideas",
     "screenCaption": "Shape your layout. See every little detail.",
     "lightDark": "Light and dark themes",
-    "screenAlt": "Actual Mira Labels 0.2.6 interface",
+    "screenAlt": "Actual Mira Labels {version} interface",
     "feature1Title": "Text, codes, and icons",
     "feature1Body": "QR codes, Code 128 barcodes, icons, and frames for your labels.",
     "feature2Title": "Every detail in place",
@@ -85,7 +85,7 @@
     "downloadSetup": "Download installer",
     "downloadZip": "Download portable ZIP",
     "unavailable": "Download links are temporarily unavailable. Please reload this page.",
-    "pageTitle": "Mira Labels — label editor for Windows",
+    "pageTitle": "Mira Labels — NIIMBOT D11H for Windows",
     "pageDescription": "Create labels with text, QR codes, barcodes, icons, and frames. Mira Labels for Windows 11, with a NIIMBOT D11H BLE profile.",
     "versionLine": "Version {version} · Windows 11 x64 · Free"
   },
@@ -108,7 +108,7 @@
     "sampleTools": "收纳好灵感",
     "screenCaption": "调整布局，看清每一处细节。",
     "lightDark": "浅色与深色主题",
-    "screenAlt": "Mira 标签 0.2.6 的真实界面",
+    "screenAlt": "Mira 标签 {version} 的真实界面",
     "feature1Title": "文字、条码与图标",
     "feature1Body": "二维码、Code 128 条码、图标与边框，让标签更实用。",
     "feature2Title": "每个细节，各就各位",
@@ -130,7 +130,7 @@
     "downloadSetup": "下载安装程序",
     "downloadZip": "下载免安装版",
     "unavailable": "下载链接暂时不可用，请刷新页面重试。",
-    "pageTitle": "Mira 标签 — Windows 标签编辑器",
+    "pageTitle": "Mira 标签 — 适用于 NIIMBOT D11H 的 Windows 编辑器",
     "pageDescription": "用文字、二维码、条码、图标和边框设计标签。适用于 Windows 11，提供 NIIMBOT D11H 蓝牙 BLE 打印配置。",
     "versionLine": "版本 {version} · Windows 11 x64 · 免费"
   }

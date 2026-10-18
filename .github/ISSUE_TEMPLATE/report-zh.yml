@@ -1,0 +1,165 @@
+{
+  "name": "中文 · NIIMBOT 打印测试",
+  "description": "提交成功、部分成功、失败或尚未测试的结果。",
+  "title": "[打印测试] ",
+  "labels": [
+    "compatibility-report",
+    "needs-review"
+  ],
+  "body": [
+    {
+      "type": "markdown",
+      "attributes": {
+        "value": "感谢测试。请粘贴应用生成的安全报告，无需重复填写报告中的字段。也可以手动描述结果。协议响应不能证明实际打印成功。新 Issue 需要审核，不会自动改变兼容状态。\n\n**这是公开的 GitHub 表单。** 请勿包含序列号、蓝牙/MAC 地址、计算机名称、文件路径、包含上述信息的日志或个人标签内容。"
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "report",
+      "attributes": {
+        "label": "应用报告或手动描述",
+        "placeholder": "粘贴应用 JSON，或手动注明：准确应用版本；型号及数字 ID（如已知）；固件；协议版本；BLE/其他连接；标签纸尺寸、类型和浓度；测试日期；是否尝试打印；是否只打印一张完整标签；文字是否被截断；二维码能否读取为 MIRA-D11H-TEST。不知道的项目请写“未检查”。",
+        "description": "在应用中选择“打开 GitHub 表单”，安全 JSON 将自动填入此处。如果没有填入，请在应用中保存 JSON，再粘贴文件内容。也可以使用“复制文本”提供手动说明。失败、部分成功和“未检查”都可以提交，无需重复填写下方字段。"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "app-version",
+      "attributes": {
+        "label": "应用版本（可选）",
+        "description": "JSON 中已有的内容无需重复填写。请提供准确版本，例如 0.2.7；不知道时请写“未知”。"
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "manual-details",
+      "attributes": {
+        "label": "补充信息（可选）",
+        "placeholder": "型号 / 数字型号 ID：\n固件 / 协议版本：\n连接方式（BLE / 其他 / 未知）：\n标签纸（宽 × 长、类型、浓度）：\n测试日期（如已知，请用 UTC）：\n其他结果说明：",
+        "description": "仅填写报告中缺少的信息。请勿提供设备广播名称或蓝牙地址。"
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "protocol-attempt",
+      "attributes": {
+        "label": "打印尝试（可选）",
+        "options": [
+          "未检查 / 报告中已注明",
+          "not_run — 未尝试打印",
+          "completed — 协议流程完成，实际打印尚未验证",
+          "error — 通信失败，标签可能已打印",
+          "cancelled — 已取消，标签可能已打印"
+        ],
+        "default": 0
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "observation-feed",
+      "attributes": {
+        "label": "是否只打印一张完整标签？（可选）",
+        "options": [
+          "not_checked — 未检查 / 报告中已注明",
+          "yes — 是",
+          "no — 否"
+        ],
+        "default": 0
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "observation-text",
+      "attributes": {
+        "label": "全部测试文字是否可见且未被截断？（可选）",
+        "options": [
+          "not_checked — 未检查 / 报告中已注明",
+          "yes — 是",
+          "no — 否"
+        ],
+        "default": 0
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "observation-qr",
+      "attributes": {
+        "label": "二维码是否读取为 MIRA-D11H-TEST？（可选）",
+        "options": [
+          "not_checked — 未检查 / 报告中已注明",
+          "yes — 是",
+          "no — 否"
+        ],
+        "default": 0
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "input",
+      "id": "test-spec",
+      "attributes": {
+        "label": "测试规范（可选）",
+        "value": "miralabel-print-check-v1",
+        "description": "用于应用内置打印检查。其他测试方法请在报告中说明。"
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "input",
+      "id": "qr-payload",
+      "attributes": {
+        "label": "预期二维码内容（可选）",
+        "value": "MIRA-D11H-TEST"
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "photo",
+      "attributes": {
+        "label": "标签照片或补充说明（可选）",
+        "description": "可将照片拖到这里。请只展示测试标签，不包含个人信息。无需上传照片也能提交。"
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "checkboxes",
+      "id": "public-consent",
+      "attributes": {
+        "label": "公开提交",
+        "options": [
+          {
+            "label": "我理解报告和附件将在 GitHub 公开，并已确认其中不包含个人信息、设备地址或序列号。",
+            "required": true
+          }
+        ]
+      }
+    }
+  ]
+}
