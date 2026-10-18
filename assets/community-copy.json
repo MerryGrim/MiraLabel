@@ -1,7 +1,7 @@
 {
   "ru": {
     "heroA1": "Этикетки для",
-    "heroA2": "NIIMBOT.",
+    "heroA2": "NIIMBOT",
     "kicker": "Мира Этикетки · локальный редактор",
     "heroScope": "D11H проверен автором. Совместимость других моделей NIIMBOT проверяем вместе.",
     "navCompatibility": "Совместимость",
@@ -81,7 +81,7 @@
   },
   "en": {
     "heroA1": "Labels for",
-    "heroA2": "NIIMBOT.",
+    "heroA2": "NIIMBOT",
     "kicker": "Mira Labels · local editor",
     "heroScope": "D11H is author-tested. Help us establish compatibility with other NIIMBOT models.",
     "navCompatibility": "Compatibility",

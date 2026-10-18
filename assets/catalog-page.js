@@ -16,7 +16,6 @@
   let releaseFailed = false;
   let catalogFailed = false;
   let copy;
-  try { search.value = (new URL(location.href).searchParams.get('q') || '').slice(0,100); } catch {}
 
   const svg = body => `<svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${body}</svg>`;
   const icons = {
@@ -42,6 +41,15 @@
   const persist = () => {
     try { localStorage.setItem('miralabel.landing.v1', JSON.stringify({language:state.language,theme:state.theme,format:state.format})); } catch {}
   };
+  try {
+    const query = new URL(location.href).searchParams;
+    search.value = (query.get('q') || '').slice(0,100);
+    const language = query.get('lang');
+    if (LANGUAGES.includes(language)) {
+      state.language = language;
+      persist();
+    }
+  } catch {}
   const hasOwnerCheck = model => Boolean(registry && model.name === 'D11_H' && model.modelCodes.includes(528) &&
     registry.profiles.some(profile => profile.modelId === 528 && profile.ownerStatus === 'verified'));
 
