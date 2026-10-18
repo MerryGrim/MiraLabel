@@ -17,6 +17,27 @@ test('empty ledger is honestly unconfirmed and the local baseline never counts',
   const result=R.aggregate(registry,'0.2.7');
   assert.equal(result.reports,0);assert.equal(result.authors,0);assert.equal(result.rows.length,1);assert.equal(result.rows[0].status,'unconfirmed');
 });
+test('owner-verified model never fabricates version reports or hides failures and mixed results',()=>{
+  const registry=clone(pristine);registry.reports=[];
+  assert.equal(registry.profiles[0].ownerStatus,'verified');
+  const empty=R.aggregate(registry,'0.2.7');
+  assert.equal(empty.reports,0);assert.equal(empty.authors,0);
+  assert.equal(empty.rows[0].status,'unconfirmed');assert.equal(empty.rows[0].evidenceLevel,'none');
+  assert.ok(Object.values(empty.rows[0].counts).every(count=>count===0));
+
+  registry.reports=[record(1,'Alice',{exactlyOneWholeLabel:'yes',textNotCut:'no',qrScans:'not_checked'})];
+  const failure=R.aggregate(registry,'0.2.7').rows.find(row=>row.reportCount);
+  assert.equal(failure.status,'failed');assert.equal(failure.counts.reported_failure,1);
+  registry.reports.push(record(2,'Bob'));
+  const mixed=R.aggregate(registry,'0.2.7').rows.find(row=>row.reportCount);
+  assert.equal(mixed.status,'mixed');assert.equal(mixed.counts.reported_failure,1);assert.equal(mixed.counts.reported_success,1);
+  assert.equal(registry.profiles[0].ownerStatus,'verified');
+
+  const future=R.aggregate(registry,'0.2.8');
+  const current=future.rows.find(row=>row.current);
+  assert.equal(current.status,'unconfirmed');assert.equal(current.reportCount,0);
+  assert.equal(future.rows.find(row=>!row.current&&row.reportCount).status,'mixed');
+});
 test('the frozen app schema and all tri-state human outcomes are accepted',()=>{
   const full=record(1).report;
   assert.deepEqual(R.validateReport(full),[]);

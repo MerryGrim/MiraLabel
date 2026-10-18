@@ -9,6 +9,7 @@
       "id": "d11h-ble",
       "model": "NIIMBOT D11H",
       "modelId": 528,
+      "ownerStatus": "verified",
       "protocolVersion": 5,
       "transport": "BLE",
       "media": { "widthMm": 12, "lengthMm": 40, "type": "gap", "density": 2 },

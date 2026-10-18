@@ -76,9 +76,10 @@
     check(same(registry.maintainers, ['MerryGrim']), 'registry: the approved maintainer is MerryGrim; extending the allowlist requires an explicit validator change');
     check(Array.isArray(registry.profiles) && registry.profiles.length === 1, 'registry: exactly one implemented D11H BLE profile is expected');
     if (Array.isArray(registry.profiles)) registry.profiles.forEach((profile, index) => {
-      check(equalKeys(profile, ['id', 'model', 'modelId', 'protocolVersion', 'transport', 'media', 'historicalBaseline']), `profile ${index}: unexpected fields`);
+      check(equalKeys(profile, ['id', 'model', 'modelId', 'ownerStatus', 'protocolVersion', 'transport', 'media', 'historicalBaseline']), `profile ${index}: unexpected fields`);
       if (!isObject(profile)) return;
       check(profile.id === 'd11h-ble' && profile.model === 'NIIMBOT D11H' && profile.modelId === 528 && profile.protocolVersion === 5 && profile.transport === 'BLE', `profile ${index}: unsupported profile must not be presented as implemented`);
+      check(profile.ownerStatus === 'verified', `profile ${index}: D11H owner confirmation must remain explicit and separate from public reports`);
       check(validateMedia(profile.media), `profile ${index}: invalid media`);
       const baseline = profile.historicalBaseline;
       check(equalKeys(baseline, ['kind', 'appVersion', 'firmware', 'testedAt', 'publicEvidenceUrl']) && baseline.kind === 'author-local' && baseline.appVersion === '0.1.1' && baseline.firmware === '4.28' && baseline.testedAt === null && baseline.publicEvidenceUrl === null, `profile ${index}: historical local baseline is not a public report`);

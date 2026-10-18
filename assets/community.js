@@ -51,10 +51,20 @@
       const heading = element('div','ml-scope-heading');
       const title = element('div');
       const printer = row.scope.printer || {};
+      const ownerVerified = registry.profiles.some(profile => profile.modelId === printer.modelId && profile.ownerStatus === 'verified');
       title.append(element('h3','',printer.modelId === 528 ? 'NIIMBOT D11H' : printer.modelId ? `NIIMBOT · ID ${printer.modelId}` : t('unknownModel')));
       title.append(element('p','ml-scope-subtitle',t(row.current && row.records.length === 0 ? 'currentScope' : 'reportedScope')));
-      const badge = element('span','ml-badge',t(statusKeys[row.status])); badge.dataset.status=row.status;
-      heading.append(title,badge);card.append(heading);
+      const badges = element('div','ml-scope-badges');
+      if (ownerVerified) {
+        const verified = element('span','ml-badge','✓ '+t('ownerVerified'));
+        verified.dataset.status='owner-verified';
+        verified.title=t('ownerVerifiedDetails');
+        badges.append(verified);
+      }
+      const statusKey = row.status === 'unconfirmed' && ownerVerified ? (row.reportCount === 0 ? 'scopeNoReports' : 'reportNotChecked') : statusKeys[row.status];
+      const badge = element('span','ml-badge',t(statusKey)); badge.dataset.status=row.status;
+      badges.append(badge);
+      heading.append(title,badges);card.append(heading);
       const details = element('dl','ml-scope-details');
       const media = row.scope.media;
       const levelKey = row.evidenceLevel === 'maintainer_reproduced' ? 'evidenceReproduced' : row.evidenceLevel === 'user_report' ? 'evidenceUserReport' : 'evidenceNone';
