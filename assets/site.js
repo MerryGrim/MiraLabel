@@ -67,7 +67,9 @@
     root.querySelector('[data-download-label]').textContent = text(state.format === 'zip' ? 'downloadZip' : 'downloadSetup');
     if (validURL(release.author?.url)) root.querySelector('[data-author-link]').href = release.author.url;
     setDownloadLinks();
-    if (window.MiraCommunity) MiraCommunity.render({root,registry,release,language:state.language,copy,error:registryError});
+    if (window.MiraCommunity && root.querySelector('[data-registry-list]')) MiraCommunity.render({root,registry,release,language:state.language,copy,error:registryError});
+    const ownerBadge = root.querySelector('[data-owner-model-badge]');
+    if (ownerBadge) ownerBadge.hidden = !!registryError || !registry || MiraRegistry.validate(registry).length > 0 || !registry.profiles.some(profile => profile.modelId === 528 && profile.ownerStatus === 'verified');
     const status = root.querySelector('.ml-status');
     if (status) status.textContent = failed ? text('unavailable') : '';
   }

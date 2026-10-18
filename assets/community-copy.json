@@ -73,7 +73,11 @@
     "ownerVerifiedDetails": "Автор приложения подтвердил реальную печать на D11H.",
     "catalogTitle": "Принтеры NIIMBOT",
     "catalogBody": "D11H проверен автором. Другие модели из каталога NIIMBOT пока отмечены как неподтверждённые. Каталог помогает найти модель; поддержка печати и результаты проверок уточняются отдельно.",
-    "scopeNoReports": "Нет отчётов для этой версии"
+    "scopeNoReports": "Нет отчётов для этой версии",
+    "compatibilityShortTitle": "Ваш принтер NIIMBOT",
+    "compatibilityShortBody": "Найдите свою модель в каталоге совместимости и поделитесь результатом. Полный список, поиск и отчёты — на отдельной странице.",
+    "compatibilityOtherModels": "Остальные модели · Не проверено",
+    "compatibilityOpen": "Найти свой принтер"
   },
   "en": {
     "heroA1": "Labels for",
@@ -149,7 +153,11 @@
     "ownerVerifiedDetails": "The app author confirmed physical printing on D11H.",
     "catalogTitle": "NIIMBOT printers",
     "catalogBody": "D11H is author-tested. Other models in the NIIMBOT catalogue are currently unconfirmed. The catalogue helps you find a model; printing support and test results are tracked separately.",
-    "scopeNoReports": "No reports for this version"
+    "scopeNoReports": "No reports for this version",
+    "compatibilityShortTitle": "Your NIIMBOT printer",
+    "compatibilityShortBody": "Find your model and share your results. The full compatibility catalogue, search, and reports have their own page.",
+    "compatibilityOtherModels": "Other models · Not tested",
+    "compatibilityOpen": "Find your printer"
   },
   "zh-CN": {
     "heroA1": "标签编辑器",
@@ -225,6 +233,10 @@
     "ownerVerifiedDetails": "应用作者已确认 D11H 的真实打印。",
     "catalogTitle": "NIIMBOT 打印机",
     "catalogBody": "D11H 已由作者实测。NIIMBOT 目录中的其他型号目前标注为尚未确认。目录可用于查找型号；打印支持情况与测试结果单独记录。",
-    "scopeNoReports": "此版本暂无报告"
+    "scopeNoReports": "此版本暂无报告",
+    "compatibilityShortTitle": "你的 NIIMBOT 打印机",
+    "compatibilityShortBody": "查找你的型号并分享结果。完整目录、搜索和测试报告位于单独的兼容情况页面。",
+    "compatibilityOtherModels": "其他型号 · 尚未测试",
+    "compatibilityOpen": "查找打印机"
   }
 }

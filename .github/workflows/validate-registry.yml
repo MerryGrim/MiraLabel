@@ -16,4 +16,4 @@ jobs:
       - name: Validate reviewed records and forms
         run: node scripts/validate-registry.cjs
       - name: Check aggregation and evidence boundaries
-        run: node --test tests/registry.test.cjs
+        run: node --test tests/registry.test.cjs tests/models.test.cjs

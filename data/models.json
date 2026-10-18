@@ -1,0 +1,726 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "name": "NIIMBOT 6.6.9 APK catalog",
+    "xapkSha256": "a1c9f44d7aaa1407af466b657ff60cf0f29edea9f445ecb5fb7ec191297a88d1",
+    "catalogSha256": "52e89809b068d3a7f6642ee923792b3ddb83b7e5a6ce925595d2ae1d70fdec22",
+    "notPrintProfiles": true
+  },
+  "models": [
+    {
+      "id": "niimbot-16a36e86f6fe",
+      "name": "A1",
+      "modelCodes": [
+        7432
+      ],
+      "testOnly": true
+    },
+    {
+      "id": "niimbot-1ff9930a8857",
+      "name": "A1 Pro",
+      "modelCodes": [
+        7424
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-084835c6a489",
+      "name": "A20",
+      "modelCodes": [
+        2817
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-fc23d4d70f19",
+      "name": "A203",
+      "modelCodes": [
+        2818
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-258c86898c5f",
+      "name": "A63",
+      "modelCodes": [
+        2054
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-553a0fddbb38",
+      "name": "A8",
+      "modelCodes": [
+        256
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-9f8377fcdb7d",
+      "name": "A8_P",
+      "modelCodes": [
+        273
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-5b950e77941d",
+      "name": "B1",
+      "modelCodes": [
+        4096
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-d17765c42ef8",
+      "name": "B1 Pro",
+      "modelCodes": [
+        4097
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-da27e05577ac",
+      "name": "B1 SE",
+      "modelCodes": [
+        4098
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-c879dc6e7e82",
+      "name": "B11",
+      "modelCodes": [
+        51457
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-bc215963d1a4",
+      "name": "B16",
+      "modelCodes": [
+        1792
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-00ceeab4df70",
+      "name": "B18",
+      "modelCodes": [
+        175,
+        3584
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-800053334fd4",
+      "name": "B18S",
+      "modelCodes": [
+        3585
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-abdbc2b5cc2c",
+      "name": "B2",
+      "modelCodes": [
+        6912,
+        6913
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-ed54d34a2101",
+      "name": "B2 Pro",
+      "modelCodes": [
+        6912
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-5d73ebde8198",
+      "name": "B20",
+      "modelCodes": [],
+      "testOnly": true
+    },
+    {
+      "id": "niimbot-30104c6de4cb",
+      "name": "B203",
+      "modelCodes": [
+        2816
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-802ef7db01bb",
+      "name": "B21",
+      "modelCodes": [
+        768
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-2014d646391d",
+      "name": "B21-C2B",
+      "modelCodes": [
+        771,
+        775
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-733b025edfc5",
+      "name": "B21-L2B",
+      "modelCodes": [
+        769
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-a395baa22104",
+      "name": "B21-L2W",
+      "modelCodes": [],
+      "testOnly": true
+    },
+    {
+      "id": "niimbot-9b27179f6d37",
+      "name": "B21_H",
+      "modelCodes": [
+        784
+      ],
+      "testOnly": true
+    },
+    {
+      "id": "niimbot-f03f18d4f93e",
+      "name": "B21_Pro",
+      "modelCodes": [
+        785
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-8fc4f8da0306",
+      "name": "B21S",
+      "modelCodes": [
+        777
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-540d3bf56abd",
+      "name": "B21S-C2B",
+      "modelCodes": [
+        776
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-0cd20d37dbaa",
+      "name": "B3",
+      "modelCodes": [
+        783,
+        52993
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-5eb00cfd65e6",
+      "name": "B31",
+      "modelCodes": [
+        5632
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-bc413c5b52ef",
+      "name": "B32",
+      "modelCodes": [
+        2049
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-637c1bc65897",
+      "name": "B32R",
+      "modelCodes": [
+        2050
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-ab870a99e279",
+      "name": "B32S",
+      "modelCodes": [],
+      "testOnly": true
+    },
+    {
+      "id": "niimbot-94a1bd07093b",
+      "name": "B3S",
+      "modelCodes": [
+        256,
+        260,
+        262
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-bac0ea85c78a",
+      "name": "B3S_A",
+      "modelCodes": [
+        275
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-50154d4a5877",
+      "name": "B3S_P",
+      "modelCodes": [
+        272
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-239fd09dd1c4",
+      "name": "B4",
+      "modelCodes": [
+        6656
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-a256d96b2bd1",
+      "name": "B4 Pro",
+      "modelCodes": [
+        6657
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-d04a8acdbbba",
+      "name": "B50",
+      "modelCodes": [
+        51713
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-316799ec35bf",
+      "name": "B50W",
+      "modelCodes": [
+        51714
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-32d8b23e3920",
+      "name": "Betty",
+      "modelCodes": [
+        2561
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-f7ab67119799",
+      "name": "BTP",
+      "modelCodes": [],
+      "testOnly": true
+    },
+    {
+      "id": "niimbot-ab861dc170dc",
+      "name": "C1",
+      "modelCodes": [
+        5120
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-342da8cdf1f2",
+      "name": "D101",
+      "modelCodes": [
+        2560
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-a7dc9aa658db",
+      "name": "D11",
+      "modelCodes": [
+        512
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-710b67f91775",
+      "name": "D110",
+      "modelCodes": [
+        2304,
+        2305
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-5d29c770d4ed",
+      "name": "D110_M",
+      "modelCodes": [
+        2320
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-452882f87d2e",
+      "name": "D11_H",
+      "modelCodes": [
+        528
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-11f72bb09105",
+      "name": "D11_Pro",
+      "modelCodes": [
+        531
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-2b2c58884936",
+      "name": "D11S",
+      "modelCodes": [
+        514
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-b114fe489870",
+      "name": "D41",
+      "modelCodes": [
+        54289
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-e87dbd3be403",
+      "name": "D61",
+      "modelCodes": [],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-3fee4d04bc8e",
+      "name": "Dxx",
+      "modelCodes": [],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-44a87c0bb096",
+      "name": "EP1C",
+      "modelCodes": [
+        5121
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-c2d4059d6603",
+      "name": "EP2M_H",
+      "modelCodes": [
+        4610
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-cbcf675d9622",
+      "name": "EP3M",
+      "modelCodes": [
+        6402
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-0d1405445f30",
+      "name": "ET10",
+      "modelCodes": [
+        5376,
+        65535
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-8a20bab056ca",
+      "name": "Fust",
+      "modelCodes": [
+        513
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-8bf797aa02bd",
+      "name": "H1",
+      "modelCodes": [
+        3840
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-d825ec61260b",
+      "name": "H1S",
+      "modelCodes": [
+        4352
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-907b61c2a0fc",
+      "name": "Hi-D110",
+      "modelCodes": [
+        2304,
+        2305
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-c2682d02a791",
+      "name": "Hi-NB-D11",
+      "modelCodes": [
+        512,
+        1621
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-1abe4be0dfc5",
+      "name": "JC-M90",
+      "modelCodes": [
+        51461
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-e3ec24c01ebc",
+      "name": "JCB3S",
+      "modelCodes": [
+        256
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-6897ab3e7bed",
+      "name": "K2",
+      "modelCodes": [
+        6144
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-54c41e0402ab",
+      "name": "K3",
+      "modelCodes": [
+        4864
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-6a4fc86c2e71",
+      "name": "K3_ITD",
+      "modelCodes": [
+        4868
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-d4492523e1fa",
+      "name": "K3_W",
+      "modelCodes": [
+        4865
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-c528b920047c",
+      "name": "K3S",
+      "modelCodes": [
+        4866
+      ],
+      "testOnly": true
+    },
+    {
+      "id": "niimbot-4ab811cbefec",
+      "name": "K4",
+      "modelCodes": [
+        7168,
+        7169
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-4b463926d05b",
+      "name": "K4 Pro",
+      "modelCodes": [
+        7169
+      ],
+      "testOnly": true
+    },
+    {
+      "id": "niimbot-9736c20feb91",
+      "name": "M2_H",
+      "modelCodes": [
+        4608
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-67629a19d082",
+      "name": "M3",
+      "modelCodes": [
+        6400
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-12e8ac23515d",
+      "name": "MP2M_H",
+      "modelCodes": [
+        4611
+      ],
+      "testOnly": true
+    },
+    {
+      "id": "niimbot-9d613ecb2960",
+      "name": "MP3K",
+      "modelCodes": [
+        4866
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-38d5218dfee2",
+      "name": "MP3K_W",
+      "modelCodes": [
+        4867
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-b79f477f6d43",
+      "name": "N1",
+      "modelCodes": [
+        3586
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-fbeae7c18667",
+      "name": "P1",
+      "modelCodes": [
+        1024
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-eda97d0b6317",
+      "name": "P18",
+      "modelCodes": [
+        1026
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-346ed5bc0a01",
+      "name": "P1S",
+      "modelCodes": [
+        1025
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-3696ad59777e",
+      "name": "S1",
+      "modelCodes": [
+        51458
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-44d6a8a73edd",
+      "name": "S3",
+      "modelCodes": [
+        51460
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-b12f76a4b782",
+      "name": "S6",
+      "modelCodes": [
+        257,
+        258,
+        259,
+        261
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-57f61ce7f86a",
+      "name": "S6_P",
+      "modelCodes": [
+        274
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-c2c3d24c80b5",
+      "name": "T2S",
+      "modelCodes": [
+        53250
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-6dbdaf93ad1f",
+      "name": "T6",
+      "modelCodes": [
+        51715,
+        51716
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-f005e93def09",
+      "name": "T7",
+      "modelCodes": [
+        51717
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-605fc1d6af3a",
+      "name": "T8",
+      "modelCodes": [
+        51718
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-24e5286d3419",
+      "name": "T8S",
+      "modelCodes": [
+        2053
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-3ae00686e24a",
+      "name": "TP2M_H",
+      "modelCodes": [
+        4609
+      ],
+      "testOnly": false
+    },
+    {
+      "id": "niimbot-10126603aec1",
+      "name": "Z401",
+      "modelCodes": [
+        2051
+      ],
+      "testOnly": false
+    }
+  ]
+}

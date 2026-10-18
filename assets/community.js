@@ -17,8 +17,6 @@
     const url = new URL('https://github.com/MerryGrim/MiraLabel/issues/new');
     url.searchParams.set('template', `report-${language === 'zh-CN' ? 'zh' : language}.yml`);
     url.searchParams.set('app-version', version);
-    url.searchParams.set('test-spec', 'miralabel-print-check-v1');
-    url.searchParams.set('qr-payload', 'MIRA-D11H-TEST');
     return url.href;
   }
   function render(options) {
