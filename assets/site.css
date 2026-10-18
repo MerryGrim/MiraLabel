@@ -1,0 +1,186 @@
+:root {color-scheme:light dark}
+html {scroll-behavior:smooth}
+body {margin:0}
+
+#mira-label-landing { width:100%; background:transparent; }
+#mira-label-landing .ml-page {
+  --ml-bg:light-dark(#f3f7f5,#11191f);--ml-surface:light-dark(#fefffe,#1b252c);--ml-ink:light-dark(#183d34,#e5f0eb);
+  --ml-muted:light-dark(#53695f,#9baea7);--ml-accent:light-dark(#16856d,#78e0d1);--ml-accent-ink:light-dark(#ffffff,#102a25);
+  --ml-line:light-dark(#dbe6df,#34433f);--ml-wash:light-dark(#e2eee7,#20332e);--ml-paper:light-dark(#ffffff,#f5f6ef);--ml-paper-ink:#172e25;
+  --ml-radius:22px;--ml-title:54px; color-scheme:light dark; background:var(--ml-bg);color:var(--ml-ink);
+  font-family:Manrope,"Segoe UI","Microsoft YaHei",sans-serif;font-size:14px;line-height:1.6;
+  min-height:100vh; border-radius:0; overflow:hidden; isolation:isolate;
+  transition:background-color .22s,color .22s;
+}
+html[data-theme="light"] #mira-label-landing .ml-page {color-scheme:light}
+html[data-theme="dark"] #mira-label-landing .ml-page {color-scheme:dark}
+#mira-label-landing .ml-page * {box-sizing:border-box}
+#mira-label-landing .ml-page [hidden] {display:none!important}
+#mira-label-landing .ml-page h1,#mira-label-landing .ml-page h2,#mira-label-landing .ml-page h3,#mira-label-landing .ml-page p {margin:0}
+#mira-label-landing .ml-page :where(button,select,a) {font-family:inherit;color:inherit}
+#mira-label-landing .ml-page button,#mira-label-landing .ml-page select {cursor:pointer}
+#mira-label-landing .ml-page button {border:0}
+#mira-label-landing .ml-page a {text-decoration:none}
+#mira-label-landing .ml-page button:focus-visible,#mira-label-landing .ml-page select:focus-visible,#mira-label-landing .ml-page a:focus-visible {outline:3px solid var(--ml-accent);outline-offset:4px}
+#mira-label-landing .ml-page [data-lucide],#mira-label-landing .ml-page svg {flex-shrink:0}
+#mira-label-landing .ml-shell {width:min(100%,1120px);margin-inline:auto;padding-inline:clamp(20px,5vw,56px)}
+#mira-label-landing .ml-nav {display:flex;align-items:center;justify-content:space-between;gap:22px;min-height:92px;border-bottom:1px solid var(--ml-line)}
+#mira-label-landing .ml-brand {display:flex;align-items:center;gap:9px;font-size:16px;font-weight:700;letter-spacing:-.5px;white-space:nowrap}
+#mira-label-landing .ml-mark {display:grid;place-items:center;width:33px;height:33px;border-radius:11px;background:var(--ml-accent);color:var(--ml-accent-ink)}
+#mira-label-landing .ml-mark svg {width:20px!important;height:20px!important}
+#mira-label-landing .ml-links {display:flex;gap:24px;margin-left:auto;font-size:12px;font-weight:500}
+#mira-label-landing .ml-links a {color:var(--ml-muted);transition:color .18s}
+#mira-label-landing .ml-links a:hover {color:var(--ml-accent)}
+#mira-label-landing .ml-nav-controls {display:flex;gap:6px;align-items:center}
+#mira-label-landing .ml-language {position:relative;display:flex;align-items:center;gap:5px;padding-left:9px;border-left:1px solid var(--ml-line)}
+#mira-label-landing .ml-language svg {width:15px;height:15px;color:var(--ml-muted)}
+#mira-label-landing .ml-language select {background:var(--ml-bg);font-size:12px;border:0;border-radius:6px;padding:9px 3px;max-width:83px}
+#mira-label-landing .ml-theme {display:grid;place-items:center;width:36px;height:36px;border-radius:10px;background:transparent;color:var(--ml-muted)}
+#mira-label-landing .ml-theme:hover {background:var(--ml-wash);color:var(--ml-ink)}
+#mira-label-landing .ml-theme svg {width:18px;height:18px}
+#mira-label-landing .ml-kicker {display:flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.09em;text-transform:uppercase;font-weight:600;color:var(--ml-muted)}
+#mira-label-landing .ml-dot {height:6px;width:6px;border-radius:50%;background:var(--ml-accent);display:inline-block;flex-shrink:0}
+#mira-label-landing .ml-title {font-size:var(--ml-title);font-weight:650;line-height:1.09;letter-spacing:-2.7px;text-wrap:balance}
+#mira-label-landing .ml-title .ml-accent {color:var(--ml-accent)}
+#mira-label-landing .ml-lede {font-size:15px;line-height:1.8;color:var(--ml-muted);text-wrap:pretty}
+#mira-label-landing .ml-actions {display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+#mira-label-landing .ml-button {display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:12px 19px;border-radius:12px;background:var(--ml-accent);color:var(--ml-accent-ink);font-size:12px;font-weight:650;transition:transform .2s,filter .2s}
+#mira-label-landing .ml-button:hover {transform:translateY(-2px);filter:brightness(1.07)}
+#mira-label-landing .ml-button svg {width:16px;height:16px}
+#mira-label-landing .ml-button.ml-secondary {background:transparent;color:var(--ml-ink);box-shadow:inset 0 0 0 1px var(--ml-line)}
+#mira-label-landing .ml-version {color:var(--ml-muted);font-size:11px}
+#mira-label-landing .ml-hero-a {text-align:center;padding-top:58px;padding-bottom:35px}
+#mira-label-landing .ml-hero-a .ml-kicker {justify-content:center;margin-bottom:22px}
+#mira-label-landing .ml-hero-a .ml-lede {max-width:510px;margin:22px auto 25px}
+#mira-label-landing .ml-hero-a .ml-actions {justify-content:center;margin-bottom:14px}
+#mira-label-landing .ml-editor-a {position:relative;padding-top:30px;padding-bottom:49px}
+#mira-label-landing .ml-editor-a::before {content:"";position:absolute;z-index:-1;inset:30px -7% 35%;border-radius:50%;background:radial-gradient(ellipse,var(--ml-wash),transparent 67%)}
+#mira-label-landing .ml-editor-frame {position:relative;line-height:0;overflow:hidden;border-radius:var(--ml-radius);border:1px solid var(--ml-line);background:var(--ml-surface);box-shadow:0 20px 60px light-dark(#143b2921,#00000042)}
+#mira-label-landing .ml-editor-frame img {width:100%;height:auto;display:block;aspect-ratio:1.6;object-fit:contain}
+#mira-label-landing .ml-screen-caption {display:flex;align-items:center;justify-content:space-between;gap:15px;font-size:11px;color:var(--ml-muted);margin-top:14px;line-height:1.6}
+#mira-label-landing .ml-screen-caption span {display:flex;align-items:center;gap:6px}
+#mira-label-landing .ml-screen-caption>span {min-width:0}
+#mira-label-landing .ml-screen-caption svg {width:13px;height:13px}
+#mira-label-landing .ml-label-corner {position:absolute;right:-8px;top:2px;transform:rotate(8deg);z-index:1;box-shadow:0 9px 24px light-dark(#1b45351f,#00000050);padding:11px 19px;background:var(--ml-paper);color:var(--ml-paper-ink);border-radius:9px;display:flex;align-items:center;gap:10px;line-height:1.4;font-size:13px;font-weight:650;border:1px solid light-dark(#dce4dc,#c3cec8)}
+#mira-label-landing .ml-label-corner svg {width:22px;height:22px}
+#mira-label-landing .ml-features {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;padding-block:13px 60px}
+#mira-label-landing .ml-feature svg {width:21px;height:21px;margin-bottom:13px;color:var(--ml-accent)}
+#mira-label-landing .ml-feature h3 {font-size:14px;font-weight:650;letter-spacing:-.25px;margin-bottom:7px}
+#mira-label-landing .ml-feature p {font-size:12px;color:var(--ml-muted);line-height:1.75}
+#mira-label-landing .ml-download {padding:31px 35px;border-radius:var(--ml-radius);background:var(--ml-wash);display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center}
+#mira-label-landing .ml-download h2 {font-size:27px;line-height:1.2;letter-spacing:-1px;font-weight:650;margin-bottom:11px}
+#mira-label-landing .ml-download p {font-size:12px;color:var(--ml-muted);max-width:330px}
+#mira-label-landing .ml-download-controls {display:grid;gap:12px}
+#mira-label-landing .ml-file-choices {display:grid;grid-template-columns:1fr 1fr;gap:8px}
+#mira-label-landing .ml-file {text-align:left;display:grid;grid-template-columns:1fr 18px;gap:2px 6px;padding:12px 13px;border-radius:11px;background:var(--ml-surface);box-shadow:inset 0 0 0 1px var(--ml-line);font-size:11px;transition:box-shadow .2s,transform .2s}
+#mira-label-landing .ml-file:hover {transform:translateY(-2px)}
+#mira-label-landing .ml-file[data-selected="true"] {box-shadow:inset 0 0 0 1.5px var(--ml-accent)}
+#mira-label-landing .ml-file b {font-size:12px;font-weight:650}
+#mira-label-landing .ml-file small {color:var(--ml-muted);font-size:11px;grid-column:1}
+#mira-label-landing .ml-file svg {width:15px;height:15px;grid-column:2;grid-row:1/3;align-self:center;opacity:.2}
+#mira-label-landing .ml-file[data-selected="true"] svg {opacity:1;color:var(--ml-accent)}
+#mira-label-landing .ml-format-line {display:flex;align-items:center;gap:7px;color:var(--ml-accent);font-size:11px;min-height:18px}
+#mira-label-landing .ml-format-line svg {width:13px;height:13px}
+#mira-label-landing .ml-compatibility {font-size:11px;line-height:1.75;color:var(--ml-muted);padding:17px 3px 0}
+#mira-label-landing .ml-footer {display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:36px;font-size:11px;color:var(--ml-muted)}
+#mira-label-landing .ml-footer a {display:inline-flex;align-items:center;gap:6px}
+#mira-label-landing .ml-footer svg {width:14px;height:14px}
+#mira-label-landing .ml-footer .ml-footer-brand {color:var(--ml-ink);font-weight:600}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#mira-label-landing .ml-page-b .ml-download {background:var(--ml-surface);border:1px solid var(--ml-line)}
+#mira-label-landing .ml-page-b .ml-file {background:var(--ml-bg)}
+#mira-label-landing .ml-page-b .ml-footer {padding-top:39px}
+#mira-label-landing .ml-scroll-target {scroll-margin-top:18px}
+@media(max-width:820px) {
+  #mira-label-landing .ml-links {display:none}
+  #mira-label-landing .ml-page {--ml-title:46px}
+
+
+
+
+
+
+
+  #mira-label-landing .ml-download {padding:27px;gap:22px}
+}
+@media(max-width:600px) {
+  #mira-label-landing .ml-page {--ml-title:38px}
+  #mira-label-landing .ml-nav {min-height:77px;gap:10px}
+  #mira-label-landing .ml-brand {font-size:14px;gap:7px}
+  #mira-label-landing .ml-mark {width:29px;height:29px;border-radius:9px}
+  #mira-label-landing .ml-mark svg {width:18px;height:18px}
+  #mira-label-landing .ml-nav-controls {gap:1px}
+  #mira-label-landing .ml-language {padding-left:5px;border-left:0;gap:2px}
+  #mira-label-landing .ml-language svg {display:none}
+  #mira-label-landing .ml-language select {max-width:75px}
+  #mira-label-landing .ml-theme {width:32px;height:34px}
+  #mira-label-landing .ml-title {letter-spacing:-1.8px}
+  #mira-label-landing .ml-hero-a {padding-top:42px;padding-bottom:22px}
+  #mira-label-landing .ml-hero-a .ml-lede {font-size:14px;line-height:1.75;margin-top:20px}
+  #mira-label-landing .ml-actions {gap:8px}
+  #mira-label-landing .ml-actions .ml-button {padding:12px 14px;font-size:11px}
+  #mira-label-landing .ml-editor-a {padding-top:30px;padding-bottom:34px}
+  #mira-label-landing .ml-label-corner {font-size:11px;padding:8px 12px;top:3px;right:1px;gap:7px}
+  #mira-label-landing .ml-label-corner svg {width:18px;height:18px}
+  #mira-label-landing .ml-editor-frame {border-radius:12px}
+  #mira-label-landing .ml-screen-caption {align-items:flex-start;font-size:11px;gap:10px}
+  #mira-label-landing .ml-features {grid-template-columns:1fr;gap:24px;padding-bottom:37px}
+  #mira-label-landing .ml-feature {display:grid;grid-template-columns:27px 1fr;gap:2px 12px}
+  #mira-label-landing .ml-feature svg {grid-row:1/3;margin:2px 0 0}
+  #mira-label-landing .ml-feature h3 {margin:0}
+  #mira-label-landing .ml-feature p {grid-column:2}
+  #mira-label-landing .ml-download {grid-template-columns:1fr;padding:24px 21px;gap:23px}
+  #mira-label-landing .ml-download h2 {font-size:26px}
+  #mira-label-landing .ml-footer {flex-wrap:wrap;gap:12px;font-size:11px;padding-block:25px}
+
+
+
+
+
+
+
+
+
+
+
+
+}
+@media(prefers-reduced-motion:reduce) {#mira-label-landing .ml-page,#mira-label-landing .ml-page * {transition:none!important;scroll-behavior:auto!important}}
+
+#mira-label-landing .ml-download-button {width:100%;font-size:12px;min-height:44px}
+#mira-label-landing .ml-file {color:var(--ml-ink)}
+#mira-label-landing [aria-disabled="true"] {opacity:.5;cursor:wait}
+#mira-label-landing .ml-version a {text-decoration:underline;text-underline-offset:3px}
+#mira-label-landing .ml-status {margin-top:12px;font-size:12px;color:var(--ml-muted)}
+#mira-label-landing .ml-skip {position:absolute;top:-100px;left:16px;z-index:10;background:var(--ml-accent);color:var(--ml-accent-ink);padding:10px 16px;border-radius:8px}
+#mira-label-landing .ml-skip:focus {top:8px}
+#mira-label-landing .ml-feature h2 {font-size:14px;font-weight:650;letter-spacing:-.25px;margin-bottom:7px}
+@media(max-width:600px) {#mira-label-landing .ml-feature h2 {margin:0}}
+@media(prefers-reduced-motion:reduce) {html {scroll-behavior:auto}}
